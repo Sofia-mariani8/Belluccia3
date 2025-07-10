@@ -489,8 +489,7 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
-  background: linear-gradient(45deg, var(--background-color) 0%, color-mix(in srgb, var(--surface-color), transparent 10%) 100%), url("../img/footer-bg.jpg") center center no-repeat;
-  background-size: cover;
+  background: #0CA0F5 !important;
   font-size: 14px;
   padding-bottom: 50px;
   position: relative;
@@ -760,16 +759,7 @@ section,
 }
 
 .section-title h2:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: var(--accent-color);
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+  display: none !important;
 }
 
 .section-title p {
@@ -1191,6 +1181,10 @@ section,
   margin: 0;
 }
 
+.features .features-item .icon {
+  margin-right: 24px;
+}
+
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
@@ -1200,8 +1194,12 @@ section,
 }
 
 .testimonials .testimonial-item {
-  box-sizing: content-box;
-  min-height: 320px;
+  min-height: 380px;
+  width: 100%;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 24px 0 rgba(61, 181, 248, 0.10), 0 1.5px 8px 0 rgba(44, 73, 100, 0.06);
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -1270,11 +1268,11 @@ section,
   height: 12px;
   background-color: var(--background-color);
   opacity: 1;
-  border: 1px solid var(--accent-color);
+  border: 1px solid #3DB5F8;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
+  background-color: #3DB5F8;
 }
 
 /*--------------------------------------------------------------
@@ -1384,7 +1382,7 @@ section,
 }
 
 .pricing h4 {
-  color: var(--accent-color);
+  color: #0B97F4;
   font-size: 48px;
   font-weight: 400;
   font-family: var(--heading-font);
@@ -1433,30 +1431,35 @@ section,
 }
 
 .pricing .buy-btn {
-  color: var(--accent-color);
-  display: inline-block;
-  padding: 8px 35px 10px 35px;
+  background: #0B97F4;
+  color: #fff;
+  border: none;
   border-radius: 13px;
-  transition: none;
-  font-size: 16px;
   font-weight: 500;
   font-family: var(--heading-font);
-  transition: 0.3s;
-  border: 1px solid var(--accent-color);
+  font-size: 16px;
+  padding: 10px 35px;
+  transition: background 0.3s, color 0.3s;
+  box-shadow: none;
 }
 
-.pricing .buy-btn:hover {
-  background: var(--accent-color);
-  color: var(--contrast-color);
+.pricing .buy-btn:hover, .pricing .buy-btn:focus {
+  background: #0384D9;
+  color: #fff;
 }
 
 .pricing .featured {
-  border-top-color: var(--accent-color);
+  border-top: 4px solid #0B97F4 !important;
 }
 
 .pricing .featured .buy-btn {
-  background: var(--accent-color);
-  color: var(--contrast-color);
+  background: #0B97F4 !important;
+  color: #fff !important;
+  border: none !important;
+}
+.pricing .featured .buy-btn:hover, .pricing .featured .buy-btn:focus {
+  background: #0384D9 !important;
+  color: #fff !important;
 }
 
 @media (max-width: 992px) {
@@ -1563,6 +1566,11 @@ section,
 .faq .faq-container .faq-active .faq-toggle {
   transform: rotate(90deg);
   color: var(--accent-color);
+}
+
+.faq .faq-container .faq-item h3,
+.faq .faq-container .faq-active h3 {
+  color: #0B97F4 !important;
 }
 
 /*--------------------------------------------------------------
@@ -1971,13 +1979,6 @@ section,
   color: var(--accent-color);
 }
 
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
-
 /* === Sobre PequePlan Section === */
 .sobrepequeplan-section {
   position: relative;
@@ -2107,4 +2108,160 @@ section,
     height: 24px;
     font-size: 0.9rem;
   }
+}
+
+/* Botón estilo "Conocer más" personalizado */
+.btn-conocer-mas {
+  display: inline-block !important;
+  width: auto !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+  padding: 8px 18px;
+  font-size: 1.1rem;
+  margin-top: 12px;
+  text-align: center;
+}
+.btn-conocer-mas:hover, .btn-conocer-mas:focus {
+  background: #0878c7;
+  color: #fff;
+  text-decoration: none;
+}
+
+.sobrepequeplan-content {
+  text-align: left !important;
+}
+
+/* Sección Fotos_de_niños */
+.fotos-ninos-section {
+  width: 100%;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fotos-ninos-img {
+  width: 100%;
+  max-width: 1920px;
+  height: 342px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Desktop (hasta 1424px) */
+@media (max-width: 1424px) {
+  .fotos-ninos-img {
+    max-width: 1424px;
+    height: 342px;
+  }
+}
+
+/* Mobile (hasta 768px) */
+@media (max-width: 768px) {
+  .fotos-ninos-img {
+    max-width: 1424px;
+    width: 100vw;
+    height: 342px;
+  }
+}
+
+.img-tarjeta-producto {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 12px auto;
+}
+
+/* Fondo para la sección de precios */
+.pricing.section {
+  background: none; /* Quitamos el fondo directo */
+  position: relative;
+  margin-top: 0;
+  padding-top: 60px; /* O el valor que tenías antes para el contenido */
+}
+
+/* Fondo pegado arriba usando un pseudo-elemento */
+.pricing.section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('../img/Fondo_seccion4.png') center center no-repeat;
+  background-size: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* El contenido de la sección debe estar por encima del fondo */
+.pricing.section > * {
+  position: relative;
+  z-index: 1;
+}
+
+.sponsors-section {
+  width: 100%;
+  background: transparent;
+  padding: 16px 0 16px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sponsors-img {
+  width: 100%;
+  max-width: 1400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.features .section-title {
+  text-align: left;
+  padding-bottom: 0 !important;
+  margin-bottom: -12px !important;
+}
+.features .section-title h2 {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+.features .section-title h2:after {
+  display: none;
+}
+.testimonials .section-title h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #3DB5F8;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.testimonials.section {
+  background-color: #FFFDF6 !important;
+}
+
+.detalle-page .hero {
+  background: url('../img/Bannerherodetalles.png') center center no-repeat;
+  background-size: cover;
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+  .detalle-page .hero {
+    background-image: url('../img/bannerfondo-tablet-detalles.png');
+    min-height: 600px;
+  }
+}
+@media (max-width: 768px) {
+  .detalle-page .hero {
+    background-image: url('../img/bannerfondo-mobile deltalles.png');
+    min-height: 500px;
+  }
+}
+
+/* Íconos celestes en la sección de contacto */
+#contact .info-item i {
+  color: #0B97F4 !important;
 }
