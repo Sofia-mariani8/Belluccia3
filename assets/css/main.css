@@ -1384,7 +1384,7 @@ section,
 .pricing h4 {
   color: #0B97F4;
   font-size: 48px;
-  font-weight: 400;
+  font-weight: 700;
   font-family: var(--heading-font);
   margin-bottom: 0;
 }
@@ -2123,8 +2123,8 @@ section,
   text-align: center;
 }
 .btn-conocer-mas:hover, .btn-conocer-mas:focus {
-  background: #0878c7;
-  color: #fff;
+  background: #0384D9 !important;
+  color: #fff !important;
   text-decoration: none;
 }
 
@@ -2264,4 +2264,87 @@ section,
 /* Íconos celestes en la sección de contacto */
 #contact .info-item i {
   color: #0B97F4 !important;
+}
+
+/* Título más grande en el hero del index */
+#hero h1 {
+  font-size: 4.5rem !important;
+  font-weight: 700 !important;
+  line-height: 0.9 !important;
+}
+
+/* Título más pequeño en tablets */
+@media (max-width: 991px) {
+  #hero h1 {
+    font-size: 3.5rem !important;
+  }
+  
+  #hero p {
+    margin-top: 0.5rem !important;
+  }
+}
+
+/* Separar el párrafo del título en el hero */
+#hero p {
+  margin-top: 1.5rem !important;
+}
+
+/* Botón más grande y en negrita en el hero */
+#hero .btn-get-started {
+  font-size: 1.3rem !important;
+  font-weight: 700 !important;
+  padding: 0.9rem 2.2rem !important;
+}
+
+/* Subir el texto y botón en mobile en el hero */
+@media (max-width: 575px) {
+  #hero.section {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2rem !important;
+  }
+  #hero .col-lg-6 {
+    margin-top: 0 !important;
+  }
+}
+
+/* Íconos más grandes en la sección Todo sobre PequePlan */
+.icono-pequeplan-grande {
+  width: 200px !important;
+  height: 200px !important;
+}
+
+/* Título en bold para 'Todo sobre PequePlan' */
+.sobrepequeplan-title {
+  font-weight: 700 !important;
+}
+
+.sobrepequeplan-section .sobrepequeplan-title {
+  font-weight: 800 !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.sobrepequeplan-section .container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.pricing .row.gy-4 {
+  margin-top: 0 !important;
+}
+
+.pricing .pricing-item {
+  margin-top: 0 !important;
+}
+
+.pricing .section-title {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.pricing .container > .row.gy-4,
+.pricing .row.gy-4 {
+  margin-top: -2.5rem !important;
+  padding-top: 0 !important;
 }
