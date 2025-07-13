@@ -2348,3 +2348,5 @@ section,
   margin-top: -2.5rem !important;
   padding-top: 0 !important;
 }
+
+.testimonials .section-title { padding-bottom: 10px !important; }
