@@ -1462,6 +1462,11 @@ section,
   color: #fff !important;
 }
 
+.buy-btn {
+  font-size: 1.25rem !important;
+  padding: 16px 48px !important;
+}
+
 @media (max-width: 992px) {
   .pricing .box {
     max-width: 60%;
@@ -2256,8 +2261,9 @@ section,
 }
 @media (max-width: 768px) {
   .detalle-page .hero {
-    background-image: url('../img/bannerfondo-mobile deltalles.png');
-    min-height: 500px;
+    background-image: url('../img/banner-hero-mobile-detalle.png') !important;
+    background-size: cover !important;
+    background-position: center !important;
   }
 }
 
@@ -2291,9 +2297,9 @@ section,
 
 /* Botón más grande y en negrita en el hero */
 #hero .btn-get-started {
-  font-size: 1.3rem !important;
+  font-size: 1.1rem !important;
   font-weight: 700 !important;
-  padding: 0.9rem 2.2rem !important;
+  padding: 0.7rem 1.8rem !important;
 }
 
 /* Subir el texto y botón en mobile en el hero */
@@ -2350,3 +2356,132 @@ section,
 }
 
 .testimonials .section-title { padding-bottom: 10px !important; }
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 2.5rem !important;
+    line-height: 1.22 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero p {
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.7rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .faq-item h3 {
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    text-align: left !important;
+  }
+}
+
+@media (max-width: 768px) {
+  body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, .section-title, .about .content, .footer, .footer-links, .footer-contact, .btn, label, input, textarea, .card-title, .card-text, .pricing-item, .faq-item, .contact, .sobrepequeplan-title, .sobrepequeplan-subtitle, .sobrepequeplan-item-title, .sobrepequeplan-item-desc {
+    text-align: center !important;
+  }
+}
+
+.porque-elegir-item h4 {
+  font-size: 1.3rem !important;
+}
+
+@media (max-width: 768px) {
+  .testimonial-item h3 {
+    font-size: 1.15rem !important;
+  }
+  .testimonial-item h4 {
+    font-size: 0.95rem !important;
+    font-weight: 400 !important;
+  }
+}
+
+@media (max-width: 991px) {
+  #por-que-elegir .d-block.d-lg-none {
+    width: 320px !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .beneficios-kit-section ul li.d-flex {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  .beneficios-kit-section ul li.d-flex span {
+    margin-right: 0 !important;
+    margin-bottom: 12px !important;
+  }
+  .beneficios-kit-section ul li.d-flex span:last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .faq-item h3,
+  .faq-item .faq-content,
+  .faq-item {
+    text-align: left !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .faq-content p {
+    text-align: left !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #faq,
+  #faq .section-title {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    scroll-margin-top: 0 !important;
+  }
+  #pricing {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Centrar el logo en el footer */
+  .footer-about .logo {
+    justify-content: center !important;
+    text-align: center !important;
+    display: flex !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100%;
+  }
+  .footer-about .logo img {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+    float: none !important;
+  }
+  /* Alinear las listas a la izquierda */
+  .footer-links ul {
+    text-align: left !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+  }
+  .footer-links {
+    text-align: left !important;
+  }
+}
