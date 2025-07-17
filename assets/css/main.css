@@ -2221,6 +2221,44 @@ section,
   margin: 0 auto;
 }
 
+/* Sponsors en columna para mobile */
+@media (max-width: 768px) {
+  .sponsors-section {
+    padding: 20px 0;
+  }
+  
+  .sponsors-img {
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .sponsors-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    padding: 0 20px;
+  }
+  
+  .sponsor-logo {
+    width: 100%;
+    max-width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sponsor-svg {
+    width: 100%;
+    height: auto;
+    max-height: 60px;
+    object-fit: contain;
+  }
+}
+
 .features .section-title {
   text-align: left;
   padding-bottom: 0 !important;
@@ -2305,11 +2343,33 @@ section,
 /* Subir el texto y botón en mobile en el hero */
 @media (max-width: 575px) {
   #hero.section {
-    padding-top: 2.5rem !important;
+    padding-top: 1.5rem !important;
     padding-bottom: 2rem !important;
   }
   #hero .col-lg-6 {
     margin-top: 0 !important;
+  }
+}
+
+/* Bajar el título y reducir espacio con subtítulo en mobile */
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 2.5rem !important;
+    line-height: 1.22 !important;
+    margin-top: 2rem !important;
+    margin-bottom: 0.5rem !important;
+    max-width: 320px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  #hero p {
+    max-width: 320px !important;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 0.5rem !important;
+    color: var(--heading-color) !important;
   }
 }
 
@@ -2483,5 +2543,86 @@ section,
   }
   .footer-links {
     text-align: left !important;
+  }
+}
+
+/* Centrar las listas de características en mobile */
+@media (max-width: 768px) {
+  .pricing .pricing-item ul {
+    text-align: left !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+  }
+  
+  .pricing .pricing-item ul li {
+    justify-content: flex-start !important;
+    text-align: left !important;
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+  
+  .pricing .pricing-item ul li i {
+    margin-right: 8px !important;
+    flex-shrink: 0 !important;
+  }
+  
+  .pricing .pricing-item ul li span {
+    text-align: left !important;
+    display: inline-block !important;
+  }
+  
+  .pricing .pricing-item {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-links {
+    width: 100% !important;
+    display: block !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .footer-top .row {
+    flex-direction: column !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-links ul {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .footer-links ul li {
+    justify-content: center !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+}
+
+/* Estilos específicos para tablet en página de detalle */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .detalle-page .hero .col-lg-6 {
+    margin-left: 2rem !important;
+  }
+  
+  .detalle-page .hero h1 {
+    font-size: 2.5rem !important;
+    line-height: 1.2 !important;
+  }
+  
+  .detalle-page .hero h2 {
+    font-size: 1.8rem !important;
+  }
+  
+  .detalle-page .hero p {
+    font-size: 1.1rem !important;
   }
 }
