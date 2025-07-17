@@ -642,32 +642,32 @@ h6 {
 /*--------------------------------------------------------------
 # Scroll Top Button
 --------------------------------------------------------------*/
-.scroll-top {
+#scroll-top {
   position: fixed;
   visibility: hidden;
   opacity: 0;
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background-color: var(--accent-color);
+  background-color: #0CA1F5 !important;
   width: 40px;
   height: 40px;
   border-radius: 4px;
   transition: all 0.4s;
 }
 
-.scroll-top i {
+#scroll-top i {
   font-size: 24px;
-  color: var(--contrast-color);
+  color: #fff !important;
   line-height: 0;
 }
 
-.scroll-top:hover {
+#scroll-top:hover {
   background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
   color: var(--contrast-color);
 }
 
-.scroll-top.active {
+#scroll-top.active {
   visibility: visible;
   opacity: 1;
 }
@@ -1739,8 +1739,10 @@ section,
   border-radius: 13px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+.contact .php-email-form button[type=submit]:hover, .php-email-form button[type=submit]:focus {
+  background: #0384D9 !important;
+  border-color: #0384D9 !important;
+  color: #fff !important;
 }
 
 /*--------------------------------------------------------------
@@ -2193,7 +2195,7 @@ section,
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: url('../img/Fondo_seccion4.png') center center no-repeat;
+  background: url('../img/Fondo_otroskit.png') center center no-repeat;
   background-size: cover;
   z-index: 0;
   pointer-events: none;
@@ -2698,4 +2700,168 @@ section,
     background: transparent !important;
     border: none !important;
   }
+}
+
+@media (min-width: 992px) {
+  .porque-elegir-titulo-web {
+    margin-top: 64px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .detalle-hero-titulo {
+    margin-bottom: 24px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .detalle-hero-desc {
+    margin-top: 0 !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .detalle-hero-precio {
+    margin-bottom: -16px !important;
+  }
+}
+
+.detalle-page .hero .btn-get-started {
+  background: #0CA1F5 !important;
+  border-color: #0CA1F5 !important;
+  color: #fff !important;
+}
+.detalle-page .hero .btn-get-started:hover,
+.detalle-page .hero .btn-get-started:focus {
+  background: #0384D9 !important;
+  border-color: #0384D9 !important;
+  color: #fff !important;
+}
+
+@media (max-width: 768px) {
+  .detalle-hero-titulo {
+    font-size: 1.5rem !important;
+    white-space: nowrap !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .detalle-page .hero .col-lg-6 {
+    max-width: 38%;
+    flex: 0 0 38%;
+    margin-left: -140px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .detalle-hero-titulo {
+    white-space: nowrap !important;
+    font-size: 2.3rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .detalle-hero-desc {
+    white-space: nowrap !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .detalle-page .hero .col-lg-6 {
+    margin-left: -100px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .detalle-page .hero .col-lg-6 {
+    max-width: 38%;
+    flex: 0 0 38%;
+    margin-left: -180px !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+  .detalle-page .hero .col-lg-6 {
+    margin-left: -32px !important;
+  }
+  .detalle-hero-precio {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .detalle-page .hero {
+    padding-top: 180px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  body.detalle-page .hero {
+    padding-top: 260px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  body.detalle-page .hero .container {
+    padding-top: 140px !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  #que-incluye .col-md-3 img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  #que-incluye .col-md-3 {
+    margin-bottom: 24px !important;
+  }
+  #que-incluye .row {
+    gap: 0 !important;
+  }
+}
+
+section h2, .section-title h2 {
+  font-weight: 800 !important;
+}
+
+#que-incluye.que-incluye-section {
+  margin-top: 48px !important;
+}
+
+@media (max-width: 768px) {
+  #que-incluye .col-6:nth-child(3),
+  #que-incluye .col-6:nth-child(4) {
+    margin-top: 32px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #beneficios-kit .d-flex.align-items-center img {
+    width: 44px !important;
+    height: 44px !important;
+    margin-top: 0 !important;
+    margin-bottom: 6px !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+  }
+  #beneficios-kit .d-flex.align-items-center {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #beneficios-kit .d-flex.align-items-center span {
+    max-width: 70vw;
+    width: 70vw;
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+}
+
+.suscripcion-facil-section .card-title {
+  font-weight: 400 !important;
+  font-size: 1rem !important;
+  color: var(--default-color) !important;
 }
