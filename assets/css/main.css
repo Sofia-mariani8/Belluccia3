@@ -428,7 +428,7 @@ h6 {
   .navmenu a:hover,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-dropdown-hover-color);
+    color: #0CA1F5 !important;
   }
 
   .navmenu .active i,
@@ -2195,7 +2195,7 @@ section,
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: url('../img/Fondo_otroskit.png') center center no-repeat;
+  background: url('../img/Fondo_seccion4.png') center center no-repeat;
   background-size: cover;
   z-index: 0;
   pointer-events: none;
@@ -2893,4 +2893,52 @@ section h2, .section-title h2 {
 
 .pricing .pricing-item ul li.videos-educativos {
   /* Se elimina la regla especial, ya que todos los li estarán alineados a la izquierda */
+}
+
+@media (max-width: 768px) {
+  .detalle-page .hero h1 {
+    font-size: 28px !important;
+    line-height: 36px !important;
+    margin-bottom: 12px !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 320px !important;
+  }
+  .detalle-page .hero h2 {
+    font-size: 22px !important;
+    margin-bottom: 10px !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 320px !important;
+  }
+  .detalle-page .hero p {
+    font-size: 16px !important;
+    line-height: 22px !important;
+    margin-bottom: 20px !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 320px !important;
+    color: var(--heading-color) !important;
+  }
+  .detalle-page .hero .btn-get-started {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    font-size: 13px !important;
+    padding: 10px 24px !important;
+  }
+  .detalle-page .hero .container {
+    padding-top: 120px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .detalle-page .pricing .pricing-item {
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

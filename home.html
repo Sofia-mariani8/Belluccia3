@@ -56,9 +56,9 @@
         margin-bottom: 32px !important;
       }
     }
-    @media (min-width: 768px) and (max-width: 991.98px) {
+    @media (min-width: 768px) and (max-width: 1199.98px) {
       .pricing .pricing-item {
-        max-width: 320px;
+        max-width: 340px;
         margin-left: auto;
         margin-right: auto;
       }
@@ -67,7 +67,39 @@
       .navmenu a:hover,
       .navmenu .active,
       .navmenu .active:focus {
-        color: var(--nav-dropdown-hover-color);
+        color: #0CA1F5 !important;
+      }
+    }
+    #pricing.pricing.section {
+      min-height: 600px; /* Ajusta el valor según lo que necesites */
+    }
+    @media (max-width: 1199px) {
+      .pricing h4 {
+        font-size: 36px !important;
+      }
+    }
+    @media (max-width: 768px) {
+      .pricing h4 {
+        font-size: 28px !important;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 1199.98px) {
+      .detalle-page .pricing .pricing-item {
+        max-width: 280px;
+        padding-left: 18px;
+        padding-right: 18px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .detalle-page .pricing .buy-btn {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        width: 100%;
+        min-width: 0;
+        max-width: 220px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
       }
     }
   </style>
@@ -107,7 +139,7 @@
             <h1>Una nueva forma de jugar</h1>
             <p style="color:#FFFDF6;">Kits divertidos para explorar, jugar sin pantallas y disfrutar en familia.</p>
             <div class="d-flex justify-content-start justify-content-center-mobile">
-              <a href="#about" class="btn-get-started">Suscribite ahora</a>
+              <a href="#pricing" class="btn-get-started">Suscribite ahora</a>
             </div>
           </div>
         </div>
@@ -131,8 +163,8 @@
               <img src="assets/img/Icono-section1.svg" alt="Elije tu kit favorito" class="icono-img icono-pequeplan-grande">
             </div>
             <img src="assets/img/Numero1.png" alt="Número 1" class="mb-2" style="width:40px; height:40px;">
-            <h3 class="sobrepequeplan-item-title">Elije tu kit favorito</h3>
-            <p class="sobrepequeplan-item-desc">Suscribite al kit que más te guste. ¡Tenemos 3 temáticas distintas muy divertidas!</p>
+            <h3 class="sobrepequeplan-item-title">Elegí tu kit favorito</h3>
+            <p class="sobrepequeplan-item-desc">Subscríbete al kit que más te guste. ¡Tenemos 3 temáticas distintas muy divertidas!</p>
           </div>
           <div class="col-lg-4 col-md-6 mx-auto d-flex flex-column align-items-center text-center">
             <div class="icono-circulo mb-3">
@@ -144,10 +176,10 @@
           </div>
           <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center text-center">
             <div class="icono-circulo mb-3">
-              <img src="assets/img/Icono-section3.svg" alt="Descubre Pequeswap" class="icono-img icono-pequeplan-grande">
+              <img src="assets/img/Icono-section3.svg" alt="Descubrí Pequeswap" class="icono-img icono-pequeplan-grande">
             </div>
             <img src="assets/img/Numero3.png" alt="Número 3" class="mb-2" style="width:40px; height:40px;">
-            <h3 class="sobrepequeplan-item-title">Descubre Pequeswap</h3>
+            <h3 class="sobrepequeplan-item-title">Descubrí Pequeswap</h3>
             <p class="sobrepequeplan-item-desc">Podés canjear kits usados por otros kits dentro de la comunidad Pequeplan</p>
           </div>
         </div>
@@ -167,7 +199,7 @@
 
           <div class="col-lg-6 order-2 order-lg-2 content d-flex flex-column justify-content-center">
             <h3><strong>¿Qué es PequePlan?</strong></h3>
-            <p>Pequeplan es una caja quincenal con juegos para niños de 3 a 8 años. Cada kit tiene juegos y materiales seguros pensado para aprender jugando y disfrutar momentos de conexión en familia. ¡Una forma sana de divertirse sin pantallas!</p>
+            <p>PequePlan es una caja quincenal con juegos para niños de 3 a 8 años. Cada kit tiene juegos y materiales seguros pensado para aprender jugando y disfrutar momentos de conexión en familia. ¡Una forma sana de divertirse sin pantallas!</p>
           </div>
 
         </div>
@@ -273,9 +305,7 @@
         <div class="row align-items-center">
           <div class="col-12 text-center text-lg-start mb-4"><!-- Agrego text-lg-start para alinear a la izquierda en web -->
             <img src="assets/img/Imagen_nena.png" alt="Niña jugando" class="d-block d-lg-none" style="width:220px; max-width:100%; border-radius:24px; margin-bottom:16px;">
-            <h2 class="text-lg-start porque-elegir-titulo-web"><!-- Solo clase, sin margin-top inline -->
-              <strong>¿Por qué elegir PequePlan?</strong>
-            </h2>
+            <h2 class="text-lg-start porque-elegir-titulo-web" style="margin-bottom: 16px !important;"><strong>¿Por qué elegir PequePlan?</strong></h2>
           </div>
           <div class="col-lg-7 mb-4 mb-lg-0">
             <div class="porque-elegir-item d-flex flex-column flex-lg-row align-items-center align-items-lg-start mb-4">
