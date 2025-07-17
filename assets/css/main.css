@@ -20,8 +20,8 @@
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #FFFDF6; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #2c4964; /* Color for headings, subheadings and title throughout the website */
+  --default-color: #373737; /* Default color used for la mayoría del texto */
+  --heading-color: #373737; /* Color para títulos y subtítulos */
   --accent-color: #5846f9; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #FFFDF6; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #FFFDF6; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
@@ -2249,6 +2249,7 @@ section,
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: visible !important;
   }
   
   .sponsor-svg {
@@ -2256,6 +2257,16 @@ section,
     height: auto;
     max-height: 60px;
     object-fit: contain;
+    display: block;
+    overflow: visible !important;
+  }
+  /* Aumentar tamaño solo para el último logo (logo4) */
+  .sponsor-logo:last-child .sponsor-svg {
+    max-height: 80px !important;
+  }
+  /* Aumentar tamaño solo para el tercer logo (logo3) */
+  .sponsor-logo:nth-child(3) .sponsor-svg {
+    max-height: 75px !important;
   }
 }
 
@@ -2624,5 +2635,28 @@ section,
   
   .detalle-page .hero p {
     font-size: 1.1rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .sobrepequeplan-item-title {
+    font-size: 1.15rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #about.section {
+    padding-top: 0px !important;
+  }
+  #pricing.section {
+    padding-bottom: 60px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .porque-elegir-item p {
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
