@@ -56,6 +56,20 @@
         margin-bottom: 32px !important;
       }
     }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .pricing .pricing-item {
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    @media (max-width: 1199px) {
+      .navmenu a:hover,
+      .navmenu .active,
+      .navmenu .active:focus {
+        color: var(--nav-dropdown-hover-color);
+      }
+    }
   </style>
 </head>
 
@@ -91,7 +105,7 @@
         <div class="row gy-4">
           <div class="col-lg-6 d-flex flex-column justify-content-center text-start text-center-mobile">
             <h1>Una nueva forma de jugar</h1>
-            <p>Kits divertidos para explorar, jugar sin pantallas y disfrutar en familia.</p>
+            <p style="color:#FFFDF6;">Kits divertidos para explorar, jugar sin pantallas y disfrutar en familia.</p>
             <div class="d-flex justify-content-start justify-content-center-mobile">
               <a href="#about" class="btn-get-started">Suscribite ahora</a>
             </div>
@@ -112,7 +126,7 @@
           </div>
         </div>
         <div class="row sobrepequeplan-items gy-4 justify-content-center">
-          <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center text-center">
+          <div class="col-lg-4 col-md-6 mx-auto d-flex flex-column align-items-center text-center">
             <div class="icono-circulo mb-3">
               <img src="assets/img/Icono-section1.svg" alt="Elije tu kit favorito" class="icono-img icono-pequeplan-grande">
             </div>
@@ -120,7 +134,7 @@
             <h3 class="sobrepequeplan-item-title">Elije tu kit favorito</h3>
             <p class="sobrepequeplan-item-desc">Suscribite al kit que más te guste. ¡Tenemos 3 temáticas distintas muy divertidas!</p>
           </div>
-          <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center text-center">
+          <div class="col-lg-4 col-md-6 mx-auto d-flex flex-column align-items-center text-center">
             <div class="icono-circulo mb-3">
               <img src="assets/img/Icono-section2.svg" alt="Recibí tu caja PequePlan" class="icono-img icono-pequeplan-grande">
             </div>
@@ -147,11 +161,11 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-6 order-1 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6 order-1 order-lg-1">
             <img src="assets/img/about.jpg" class="img-fluid" alt="">
           </div>
 
-          <div class="col-lg-6 order-2 order-lg-2 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-6 order-2 order-lg-2 content d-flex flex-column justify-content-center">
             <h3><strong>¿Qué es PequePlan?</strong></h3>
             <p>Pequeplan es una caja quincenal con juegos para niños de 3 a 8 años. Cada kit tiene juegos y materiales seguros pensado para aprender jugando y disfrutar momentos de conexión en familia. ¡Una forma sana de divertirse sin pantallas!</p>
           </div>
@@ -181,7 +195,7 @@
 
       <div class="container">
 
-        <div class="row gy-4">
+        <div class="row gy-4 justify-content-center align-items-stretch d-flex">
 
           <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="pricing-item">
@@ -204,8 +218,8 @@
               <ul>
                 <li><i class="bi bi-check"></i> <span>Incluye guía paso a paso</span></li>
                 <li><i class="bi bi-check"></i> <span>Beneficio de Pequeswap</span></li>
-                <li><i class="bi bi-check"></i> <span>Videos educativos</span></li>
                 <li><i class="bi bi-check"></i> <span>Libro de regalo para jugar</span></li>
+                <li><i class="bi bi-check"></i> <span>Videos educativos</span></li>
               </ul>
               <a href="detalle.html" class="buy-btn">Suscribirme</a>
             </div>

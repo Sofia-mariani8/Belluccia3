@@ -2865,3 +2865,32 @@ section h2, .section-title h2 {
   font-size: 1rem !important;
   color: var(--default-color) !important;
 }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .pricing .col-md-6 {
+    max-width: 340px;
+    flex: 0 0 340px;
+  }
+}
+
+@media (min-width: 768px) {
+  .pricing .pricing-item {
+    text-align: center;
+  }
+  .pricing .pricing-item ul {
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .pricing .pricing-item ul li {
+    justify-content: center !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+}
+
+.pricing .pricing-item ul li.videos-educativos {
+  /* Se elimina la regla especial, ya que todos los li estarán alineados a la izquierda */
+}
